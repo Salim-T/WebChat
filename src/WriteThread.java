@@ -37,7 +37,7 @@ public class WriteThread extends Thread{
         do {
             Scanner scanne = new Scanner(System.in);
             System.out.println(("[" + userName + "]: "));
-            text = scanne.next();
+            text = scanne.nextLine();
             writer.println(text);
 
         } while (!text.equals("quit"));
